@@ -1,4 +1,4 @@
-﻿namespace NewsletterSimpleDI.Model
+﻿namespace NewsletterSimpleDI.ViewModel
 {
     public class EmailViewModel
     {
