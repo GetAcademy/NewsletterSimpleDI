@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    E-postadresse: <br />
+    <input type="text" oninput="email=this.value" /><br />
+    <button onclick="registerSubscription()">Registrer nyhetsbrev</button>
+    <script>
+        let email;
+
+        async function registerSubscription() {
+            let arg = { email };
+            let response = await axios.post('/subscription', arg);
+        }
+
+    </script>
+</body>
+</html>
